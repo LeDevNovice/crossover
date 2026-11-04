@@ -1,0 +1,7 @@
+# Generated data
+data/
+reports/
+.cache/
+
+# Package manager lockfile
+pnpm-lock.yaml

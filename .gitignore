@@ -1,0 +1,23 @@
+# Dependencies
+node_modules/
+
+# Local caches
+.cache/
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+
+# Local databases and exports
+*.sqlite
+*.sqlite3
+*.db
+*.zip
+
+# Generated reports
+reports/
+
+# OS files
+.DS_Store
+Thumbs.db

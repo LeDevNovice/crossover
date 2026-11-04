@@ -1,0 +1,28 @@
+{
+  "name": "crossover",
+  "version": "0.0.0",
+  "private": true,
+  "description": "",
+  "type": "module",
+  "engines": {
+    "node": ">=26.0.0 <27"
+  },
+  "packageManager": "pnpm@10.28.0",
+  "scripts": {
+    "crossover": "node src/cli.ts",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit",
+    "lint": "oxlint src test",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "check": "pnpm format:check && pnpm typecheck && pnpm lint && pnpm test"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "oxlint": "^1.91.0",
+    "prettier": "^3.9.10",
+    "typescript": "^7.0.2",
+    "vitest": "^5.1.0"
+  }
+}
